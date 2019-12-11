@@ -68,7 +68,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qN-zM-Rt3">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qN-zM-Rt3" userLabel="Humidity Lable">
                                                 <rect key="frame" x="252" y="0.0" width="162" height="53.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -104,8 +104,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="appiarentTemperatureLable" destination="Udn-ff-w3j" id="9kS-b0-t7g"/>
-                        <outlet property="humididtyLable" destination="6qN-zM-Rt3" id="Sma-6R-wc5"/>
+                        <outlet property="appearentTemperatureLable" destination="Udn-ff-w3j" id="s0b-1r-BnU"/>
+                        <outlet property="humidityLable" destination="6qN-zM-Rt3" id="a0N-74-8B1"/>
                         <outlet property="imageView" destination="rwd-AH-hGC" id="5gt-WQ-cuP"/>
                         <outlet property="locationLable" destination="4dK-h1-bJh" id="lSZ-P0-Xmb"/>
                         <outlet property="pressureLable" destination="hza-E4-H6Z" id="deL-Bs-Kb4"/>

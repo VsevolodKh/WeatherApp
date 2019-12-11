@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var pressureLable: UILabel!
     @IBOutlet var humidityLable: UILabel!
     @IBOutlet var temperatureLable: UILabel!
-    @IBOutlet var appiarentTemperatureLable: UILabel!
+    @IBOutlet var appearentTemperatureLable: UILabel!
     @IBOutlet var refreshButton: UIButton!
     
     
@@ -25,9 +25,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+         
+        let icon = WeatherIconManager.Rain.image
+        let currentWeather = CurrentWeather(temperature: 5.0, appearentTemperature: 3.0, humidity: 60, pressure: 777, icon: icon)
+        
+        updateUIWith(currentWeather: currentWeather)
     }
 
+    func updateUIWith(currentWeather: CurrentWeather) {
+        
+        self.imageView.image = currentWeather.icon
+        self.pressureLable.text = currentWeather.pressureString
+        self.temperatureLable.text = currentWeather.temperatureString
+        self.appearentTemperatureLable.text = currentWeather.appearentTemperatureString
+        self.humidityLable.text = currentWeather.humidityString
 
+    }
 }
 
